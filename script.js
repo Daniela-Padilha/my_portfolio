@@ -110,8 +110,8 @@ function showBookDetails(project) {
 			<h3 style="font-family: Georgia, serif; color: #5e4129;">${project.title}</h3>
 			<div style="color: #7b5e46; margin-bottom: 0.8rem">${project.meta}</div>
 			<p style="margin-bottom: 1.1rem;">${project.description}</p>
-			<a href="${project.github}" target="_blank" styçe="margin-right: 1.2rem; color: #4e342e; font-weight: bold;">Github</a>
-			${project.demo && project.demo !== "#" ? `<a href="${project.demo}" target="_blank" style:"color: #795548; font-weight: bold;">Live Demo</a>` : ""}
+			<a href="${project.github}" target="_blank" style="margin-right: 1.2rem; color: #4e342e; font-weight: bold;">Github</a>
+			${project.demo && project.demo !== "#" ? `<a href="${project.demo}" target="_blank" style="color: #795548; font-weight: bold;">Live Demo</a>` : ""}
 		</div>
 	`;
 	popup.onclick = e => {

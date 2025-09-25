@@ -84,6 +84,17 @@ section h2 {
   margin-bottom: 1rem;
 }
 
+main a {
+  color: #4e342e;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+main a:hover {
+  color: #795548;
+}
+
 /* Bio section */
 
 #bio {
