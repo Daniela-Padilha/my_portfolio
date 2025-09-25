@@ -84,17 +84,6 @@ section h2 {
   margin-bottom: 1rem;
 }
 
-main a {
-  color: #4e342e;
-  font-weight: bold;
-  font-size: 0.9rem;
-  transition: color 0.2s;
-}
-
-main a:hover {
-  color: #795548;
-}
-
 /* Bio section */
 
 #bio {
@@ -112,6 +101,23 @@ main a:hover {
   border: 3px solid #bca18d;
   margin-bottom: 1rem;
   box-shadow: 0 4px 16px rgba(60, 40, 20, 0.13);
+}
+
+.resume-btn {
+  display: inline-block;
+  background: #795548;
+  color: #fff;
+  padding: 0.7em 1.3em;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 1em;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.resume-btn:hover {
+  background: #5e4129;
 }
 
 /* Bookshelf and project cards */
