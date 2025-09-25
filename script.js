@@ -18,14 +18,14 @@ navList.querySelectorAll("a").forEach(link => {
 // ------------ Projects ------------
 
 const projects = [
-	{
-		title: "Plant Watering App",
-		cover: "#",
-		meta: "Vanilla JS, HTML, CSS",
-		description: "A reminder to water your plants",
-		github: "#",
-		demo: "#"
-	},
+	// {
+	// 	title: "Plant Watering App",
+	// 	cover: "#",
+	// 	meta: "Vanilla JS, HTML, CSS",
+	// 	description: "A reminder to water your plants",
+	// 	github: "#",
+	// 	demo: "#"
+	// },
 	{
 		title: "Cozy Notes App",
 		cover: "assets/imgs/Cozy-Notes-App.png",
