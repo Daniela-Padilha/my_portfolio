@@ -131,11 +131,25 @@ function renderBookshelf() {
 };
 
 // ------------ Form ------------
+document.addEventListener("DOMContentLoaded", () => {
+  emailjs.init("TcrSftVZUeKI_gcP9");
 
-//Prevent submission for now
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-	event.preventDefault();
-	alert("Thanks for your message! (Demo only)");
+ const form = document.getElementById("contact-form");
+  if (form) {
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_6jqwimp", "template_emteihs", this)
+        .then(() => {
+          alert("✅ Message sent successfully!");
+          form.reset();
+        })
+        .catch((error) => {
+          alert("❌ Failed to send: " + JSON.stringify(error));
+          console.error("EmailJS error:", error);
+        });
+    });
+  }
 });
 
 // ------------ Init ------------
