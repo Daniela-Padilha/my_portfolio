@@ -2,9 +2,13 @@
 
 This is my personal portfolio website, built to showcase my projects, skills, and experience as a developer. The site is built using HTML, CSS, and JavaScript, featuring a responsive and interactive design.
 
+## 📸 Live Demo
+
+[Live Demo](https://daniela-padilha.github.io/my_portfolio/)
+
 ## 🎨 Design & Features
 
-- Responsive Layout – Looks great on desktop, tablet, and mobile devices.
+- Responsive Layout – Adapts to desktop, tablet, and mobile devices.
 
 - Smooth Animations – Subtle effects enhance user experience.
 
@@ -26,17 +30,20 @@ This is my personal portfolio website, built to showcase my projects, skills, an
 
 ## 📂 Project Structure
 portfolio-website/
+
 ├── home.html         # Main page
+
 ├── projects.html     # Projects page
+
 ├── contacts.html     # Contacts page
+
 ├── style.css          # Styling and layout
+
 ├── script.js          # Interactivity
+
 ├── assets/            # Images, icons, and media
+
 └── README.md          # Project overview
-
-## 📸 Live Demo
-
-[Live Demo](https://daniela-padilha.github.io/my_portfolio/)
 
 ✨ Notes
 
