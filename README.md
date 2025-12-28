@@ -26,7 +26,9 @@ This is my personal portfolio website, built to showcase my projects, skills, an
 
 ## 📂 Project Structure
 portfolio-website/
-├── index.html         # Main page
+├── home.html         # Main page
+├── projects.html     # Projects page
+├── contacts.html     # Contacts page
 ├── style.css          # Styling and layout
 ├── script.js          # Interactivity
 ├── assets/            # Images, icons, and media

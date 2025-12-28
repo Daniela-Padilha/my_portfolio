@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<title>Daniela Padilha's Portfolio</title>
 </head>
 <body>
@@ -20,16 +21,35 @@
 		</header>
 	<main>
 		<section id="contact">
-			<h2>Contact</h2>
-			<form id="contact-form">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" placeholder="Your Name" required>
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" placeholder="Your Email" required>
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-				<button type="submit">Send</button>
-			</form>
+			<h2>Contacts</h2>
+  			<p>I'm open to new opportunities. Feel free to reach out via email or connect on LinkedIn.</p>
+
+  			<div class="contact-grid">
+   				<div class="contact-card">
+      				<a href="mailto:danielasofiapadilha@gmail.com">
+						<i class="fa-solid fa-envelope"></i>
+        				<span>Email</span>
+					</a>
+    			</div>
+    			<div class="contact-card">
+      				<a href="https://www.linkedin.com/in/daniela-sofia-padilha/" target="_blank">
+						<i class="fa-brands fa-linkedin"></i>
+        				<span>LinkedIn</span>
+					</a>
+    			</div>
+    			<div class="contact-card">
+     	 			<a href="https://github.com/Daniela-Padilha" target="_blank">
+						<i class="fa-brands fa-github"></i>
+        				<span>GitHub</span>
+					</a>
+    			</div>
+    			<div class="contact-card">
+					<a href="assets/Daniela_Padilha_CV.pdf" download>
+       					<i class="fa-solid fa-file-arrow-down"></i>
+        				<span>Download Resume</span>
+      				</a>
+    			</div>
+  			</div>
 		</section>
 	</main>
 	<footer>
