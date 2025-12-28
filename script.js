@@ -41,9 +41,7 @@ skillLevels.forEach(level => skillObserver.observe(level));
 
 // ------------ Project cards load ------------
 
-const cards = document.querySelectorAll(
-  '.project-card, .other-project-card'
-);
+const cards = document.querySelectorAll('.project-card, .other-project-card');
 
 const cardObserver = new IntersectionObserver(
   entries => {
