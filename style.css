@@ -314,6 +314,8 @@ footer {
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  text-align: center;
+  display: inline-block;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -321,7 +323,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.4rem;
+  justify-content: center;
+  gap: 0.5rem;
   text-decoration: none;
   color: #A62103;
   font-weight: bold;
@@ -339,6 +342,29 @@ footer {
 .contact-card:hover {
   transform: scale(1.05);
   box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.copy-email {
+  color: #F23005;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+#copy-email:hover {
+  background: #F23005;
+}
+
+#copy-feedback {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: #401010;
 }
 
 /* Responsive Design */

@@ -56,3 +56,27 @@ const cardObserver = new IntersectionObserver(
 );
 
 cards.forEach(card => cardObserver.observe(card));
+
+// ------------ Copy email ------------
+
+const emailLink = document.getElementById("email-link");
+const feedback = document.getElementById("copy-feedback");
+const email = "danielasofiapadilha@gmail.com";
+
+emailLink.addEventListener("click", (e) => {
+  // On normal click: open mail client
+  // On Ctrl/Cmd + click or mobile, mailto still works
+
+  if (!e.metaKey && !e.ctrlKey) {
+    e.preventDefault(); // prevent opening mail client
+    navigator.clipboard.writeText(email)
+      .then(() => {
+        feedback.textContent = "Email copied!";
+        setTimeout(() => feedback.textContent = "", 2000);
+      })
+      .catch(() => {
+        feedback.textContent = "Failed to copy, please copy manually.";
+      });
+  }
+});
+
