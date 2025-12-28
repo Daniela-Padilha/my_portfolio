@@ -33,8 +33,11 @@ section {
 header {
 	padding: 1.5rem 1rem 1rem 1rem;
   text-align: center;
-  position: relative;
   box-shadow: 9px 0px 10px #400101;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fef2e6;;
 }
 
 nav ul {
@@ -76,7 +79,6 @@ footer {
   font-size: 0.8rem;
 }
 
-/* home.html */
 /* Bio */
 
 #bio {
@@ -117,42 +119,6 @@ footer {
   outline: none;
 }
 
-/* Skills */
-
-#skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-}
-
-.skill-card {
-  padding-bottom: 1.5rem;
-}
-
-.levels {
-  display: flex;
-  gap: 6px;
-  margin: 0.4rem 0;
-}
-
-.levels span {
-  flex: 1;
-  height: 8px;
-  border-radius: 6px;
-  opacity: 0.3;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s ease, opacity 0.3s ease;
-  background: #260101;
-}
-
-.levels span.active {
-  background: #F23005;
-  opacity: 1;
-  transform: scaleX(1);
-}
-
-/* Projects.html */
 /* Featured Projects */
 
 #projects h2 {
@@ -166,6 +132,7 @@ footer {
 }
 
 .project-card {
+  
   background: #F2CAB3;
   padding: 1.2rem;
   border-radius: 14px;
@@ -216,6 +183,15 @@ footer {
 .other-project-card.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  object-fit: cover;
 }
 
 /* Other Projects */
@@ -274,7 +250,42 @@ footer {
   color: #F23005;
 }
 
-/* Contacts.html */
+/* Skills */
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  padding-bottom: 1.5rem;
+}
+
+.levels {
+  display: flex;
+  gap: 6px;
+  margin: 0.4rem 0;
+}
+
+.levels span {
+  flex: 1;
+  height: 8px;
+  border-radius: 6px;
+  opacity: 0.3;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+  background: #260101;
+}
+
+.levels span.active {
+  background: #F23005;
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* Contacts */
 
 #contact {
   padding: 3rem 1rem;
